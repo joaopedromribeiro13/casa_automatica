@@ -7,3 +7,10 @@ LEDS
 
 Bomba de água
 16 - bombaPin
+   - sensorUmid
+
+Sensor de Presença
+   - sensorPres
+
+Som de bipe   
+   - modBuzzer
