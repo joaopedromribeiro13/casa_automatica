@@ -1,27 +1,48 @@
-const int bombaPin = 16;  // Escolha o pino que controla o relé da bomba
+// Definir pinos
 const int led1 = 15;
 const int led2 = 2;
-const int lde3 = 4;
-
-
-
-
-
-
+const int led3 = 4;
+const int sensorMovimento = 16;
+const int sensorUmidade = 34;
+const int bomba = 17;
 
 void setup() {
-  Serial.begin(9600);   // Configura a taxa de transmissão do Bluetooth
-  pinMode(bombaPin, OUTPUT);
-  digitalWrite(bombaPin, LOW);  // Começa com a bomba desligada
+  pinMode(led1, OUTPUT);
+  pinMode(led2, OUTPUT);
+  pinMode(led3, OUTPUT);
+  pinMode(sensorMovimento, INPUT);
+  pinMode(sensorUmidade, INPUT);
+  pinMode(bomba, OUTPUT);
+  Serial.begin(9600);
 }
 
 void loop() {
+  // Leitura dos sensores
+  int movimento = digitalRead(sensorMovimento);
+  int umidade = analogRead(sensorUmidade);
+
+  pinMode(bombaPin, OUTPUT);
+  digitalWrite(bombaPin, LOW);  // Começa com a bomba desligada
+
+
+  //teste para sensor de umidade
+  if (umidade < 1000) {
+    digitalWrite(bomba, HIGH);  // Liga a bomba se a umidade estiver baixa
+  } else {
+    digitalWrite(bomba, LOW);
+  }
+
+
+
+
   if (Serial.available()) {
     char comando = Serial.read();  // Lê o comando do Bluetooth
     if (comando == 'L') {
-      digitalWrite(bombaPin, HIGH); // Liga a bomba
+      digitalWrite(bomba, HIGH); // Liga a bomba
     } else if (comando == 'D') {
-      digitalWrite(bombaPin, LOW);  // Desliga a bomba
+      digitalWrite(bomba, LOW);  // Desliga a bomba
     }
   }
 }
+
+
