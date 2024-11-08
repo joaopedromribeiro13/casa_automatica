@@ -5,6 +5,7 @@ const int led3 = 4;
 const int sensorMovimento = 16;
 const int sensorUmidade = 34;
 const int bomba = 17;
+const int buzzer = 5; 
 
 void setup() {
   pinMode(led1, OUTPUT);
@@ -13,6 +14,14 @@ void setup() {
   pinMode(sensorMovimento, INPUT);
   pinMode(sensorUmidade, INPUT);
   pinMode(bomba, OUTPUT);
+  pinMode(buzzer, OUTPUT);
+
+
+  // Buzzer apita ao ligar o sistema
+  digitalWrite(buzzer, HIGH);  
+  delay(500);                  
+  digitalWrite(buzzer, LOW); 
+  
   Serial.begin(9600);
 }
 
