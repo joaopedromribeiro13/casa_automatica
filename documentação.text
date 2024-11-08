@@ -1,0 +1,9 @@
+Portas arduino:
+
+LEDS
+15 - led 1
+02 - led 2
+04 - led 3
+
+Bomba de água
+16 - bombaPin
