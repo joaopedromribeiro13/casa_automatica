@@ -51,15 +51,34 @@ void loop() {
   }
 
 
+  if (comando == 'A') {
+      //Controle Leds
+      digitalWrite(led1, HIGH); // Liga LED1
+    } else if (comando == 'a') {
+      digitalWrite(led1, LOW);  // Desliga LED1
+    } else if (comando == 'B') {
+      digitalWrite(led2, HIGH); // Liga LED2
+    } else if (comando == 'b') {
+      digitalWrite(led2, LOW);  // Desliga LED2
+    } else if (comando == 'C') {
+      digitalWrite(led3, HIGH); // Liga LED3
+    } else if (comando == 'c') {
+      digitalWrite(led3, LOW);  // Desliga LED3
+    }
+      //Controle buzzer
+      else if (comando == 'P') {
+      digitalWrite(buzzer, HIGH); // Liga o buzzer
+    } else if (comando == 'p') {
+      digitalWrite(buzzer, LOW);  // Desliga o buzzer
+    }
 
-
-  if (Serial.available()) {
-    char comando = Serial.read();  // Lê o comando do Bluetooth
-    if (comando == 'L') {
+      // Controle da Bomba
+      else if (comando == 'L') {
       digitalWrite(bomba, HIGH); // Liga a bomba
     } else if (comando == 'D') {
       digitalWrite(bomba, LOW);  // Desliga a bomba
     }
+
   }
 }
 
