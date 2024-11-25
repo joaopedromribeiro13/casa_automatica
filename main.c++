@@ -12,7 +12,8 @@ const int led3 = 4;
 const int sensorMovimento = 16;
 const int sensorUmidade = 34;
 const int bomba = 17;
-const int buzzer = 5; 
+const int buzzer = 5;
+char comando = '0';
 
 void setup() {
   Serial.begin(9600);
@@ -35,6 +36,11 @@ void setup() {
 }
 
 void loop() {
+
+  //Realiza leitura do Bluetooth
+  if (Serial.available() > 0) {
+   comando = Serial.read();
+  
   // Leitura dos sensores
   int movimento = digitalRead(sensorMovimento);
   int umidade = analogRead(sensorUmidade);
