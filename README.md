@@ -56,6 +56,16 @@ Atualmente, o projeto está **em desenvolvimento**, com as seguintes etapas:
 
 ---
 
+##Integrantes do Projeto
+
+- `João Pedro Mendanha Ribeiro`
+
+- `Luiz Felipe Santos Attie`
+
+- `Pedro Henrique Simao Diniz`
+
+---
+
 ## Acesso ao Projeto.
 ### Para clonar e acessar o projeto localmente:
 1. Clone o repositório:  
