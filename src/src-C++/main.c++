@@ -37,30 +37,33 @@ void setup() {
 
 void loop() {
 
-  //Realiza leitura do Bluetooth
-  if (Serial.available() > 0) {
-   comando = Serial.read();
-  
+  /*
+
   // Leitura dos sensores
   int movimento = digitalRead(sensorMovimento);
   int umidade = analogRead(sensorUmidade);
 
-  pinMode(bombaPin, OUTPUT);
-  digitalWrite(bombaPin, LOW);  // Começa com a bomba desligada
 
+  
+  digitalWrite(bomba, LOW);  // Começa com a bomba desligada
 
-  //teste para sensor de umidade
+  teste para sensor de umidade
   if (umidade < 1000) {
     digitalWrite(bomba, HIGH);  // Liga a bomba se a umidade estiver baixa
   } else {
     digitalWrite(bomba, LOW);
   }
+*/
 
 
-  if (comando == 'A') {
+  //Realiza leitura do Bluetooth
+  if (SerialBT.available() > 0) {
+  comando = SerialBT.read();
+  
+  if (comando == '1') {
       //Controle Leds
       digitalWrite(led1, HIGH); // Liga LED1
-    } else if (comando == 'a') {
+    } else if (comando == '0') {
       digitalWrite(led1, LOW);  // Desliga LED1
     } else if (comando == 'B') {
       digitalWrite(led2, HIGH); // Liga LED2
