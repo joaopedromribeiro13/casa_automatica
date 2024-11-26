@@ -56,7 +56,7 @@ Atualmente, o projeto está **em desenvolvimento**, com as seguintes etapas:
 
 ---
 
-##Integrantes do Projeto
+## Integrantes do Projeto
 
 - `João Pedro Mendanha Ribeiro`
 
