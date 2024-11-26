@@ -70,4 +70,4 @@ Atualmente, o projeto está **em desenvolvimento**, com as seguintes etapas:
 ### Para clonar e acessar o projeto localmente:
 1. Clone o repositório:  
    ```bash
-   git clone https://github.com/usuario/casa-inteligente.git
+   git clone https://github.com/joaopedromribeiro13/casa_automatica.git
