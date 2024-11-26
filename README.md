@@ -35,19 +35,7 @@ Atualmente, o projeto está **em desenvolvimento**, com as seguintes etapas:
 
 ---
 
-## Funcionalidades e Demonstração da Aplicação
-
-- **Monitoramento de Umidade do Solo**: Sensores captam a umidade do solo e acionam automaticamente o sistema de irrigação quando necessário.  
-- **Detecção de Movimento**: Sensores de presença automatizam o acionamento de luzes e alarmes, economizando energia.  
-- **Irrigação Automatizada**: O sistema liga a bomba hidráulica para irrigação conforme os dados do sensor de umidade, garantindo o cuidado com plantas de forma eficiente.  
-- **Controle de Luzes**: O aplicativo permite ligar e desligar luzes remotamente, adicionando conveniência e personalização.  
-- **Central de Controle via Aplicativo**: O usuário pode gerenciar todos os dispositivos conectados através de um único aplicativo móvel.
-
-> *Demonstrações visuais, como vídeos ou imagens, serão adicionadas em breve.*
-
----
-
-## :hammer: Funcionalidades do Projeto
+## :hammer: Funcionalidades e Demonstração da Aplicação
 
 - `Monitoramento de Umidade do Solo`:  
   Sensores captam a umidade do solo e acionam automaticamente o sistema de irrigação quando necessário.  
@@ -63,6 +51,8 @@ Atualmente, o projeto está **em desenvolvimento**, com as seguintes etapas:
 
 - `Central de Controle via Aplicativo`:  
   Aplicativo centraliza o gerenciamento dos sensores e dispositivos, oferecendo praticidade ao usuário.
+
+> *Demonstrações visuais, como vídeos ou imagens, serão adicionadas em breve.*
 
 ---
 
