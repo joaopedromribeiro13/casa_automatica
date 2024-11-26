@@ -8,7 +8,7 @@
 
 ## Ferramentas e Tecnologias
 
-<img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" width="40" height="40"/> <img loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-7YgpVL5SmYjtBHrZ_bqsaDHsVNhnC9PBdg&s" width="40" height="40"/>
+<img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" width="40" height="40"/> <img loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-7YgpVL5SmYjtBHrZ_bqsaDHsVNhnC9PBdg&s" width="40" height="40"/> <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" /> <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
 
 ## Descrição do Projeto
 
