@@ -4,51 +4,50 @@
   <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
 </p>
 
-<p>O projeto busca criar um ambiente doméstico inteligente, integrando diferentes dispositivos e sistemas. Entre as funcionalidades estão 
-o uso de sensores de umidade para monitoramento ambiental, sensores de presença para automação, e um sistema de irrigação automatizado. Adicionalmente,
-será desenvolvido um aplicativo que centraliza o gerenciamento desses sistemas, incluindo o controle remoto das luzes da residência.</p>
+---
+
+## Descrição do Projeto
+
+O projeto **Casa Inteligente** tem como objetivo criar um sistema de automação residencial que combine hardware e software para facilitar a interação com dispositivos domésticos. Ele utiliza sensores para monitoramento ambiental, sistemas automatizados para controle de irrigação e um aplicativo que centraliza todas as funções. Com isso, busca proporcionar aos usuários mais comodidade, eficiência energética e praticidade no dia a dia.
+
+### Principais objetivos:
+- Simular um sistema inteligente de automação residencial.
+- Integrar sensores e dispositivos com conectividade IoT.
+- Desenvolver um aplicativo intuitivo para controle e monitoramento remoto.
 
 ---
 
-## Tecnologias Utilizadas
+## Status do Projeto
 
-<p>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="40" height="40"/>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Mit_app_inventor_logo.png" width="40" height="40"/>
-</p>
-
----
-
-## Índice 
-
-- [Descrição do Projeto](#descrição-do-projeto)
-- [Status do Projeto](#status-do-projeto)
-- [Funcionalidades e Demonstração da Aplicação](#funcionalidades-e-demonstração-da-aplicação)
-- [Acesso ao Projeto](#acesso-ao-projeto)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Pessoas Contribuidoras](#pessoas-contribuidoras)
-- [Pessoas Desenvolvedoras do Projeto](#pessoas-desenvolvedoras-do-projeto)
-- [Licença](#licença)
-- [Conclusão](#conclusão)
+Atualmente, o projeto está **em desenvolvimento**, com as seguintes etapas:  
+1. **Concluído**:
+   - Protótipo do aplicativo no App Inventor.
+   - Configuração inicial dos sensores e atuadores.  
+2. **Em andamento**:
+   - Integração do aplicativo com o hardware.
+   - Testes de comunicação Bluetooth entre o aplicativo e o microcontrolador ESP32.
+3. **Próximos passos**:
+   - Implementação de novos sensores.
+   - Otimização do código e design do aplicativo.  
+   - Documentação final do projeto.
 
 ---
 
 ## Funcionalidades e Demonstração da Aplicação
 
-- Monitoramento de umidade do solo.
-- Detecção de presença para automação de dispositivos.
-- Sistema de irrigação inteligente.
-- Controle remoto de luzes via aplicativo.
-- Integração com sensores e dispositivos IoT.
+- **Monitoramento de Umidade do Solo**: Sensores captam a umidade do solo e acionam automaticamente o sistema de irrigação quando necessário.  
+- **Detecção de Movimento**: Sensores de presença automatizam o acionamento de luzes e alarmes, economizando energia.  
+- **Irrigação Automatizada**: O sistema liga a bomba hidráulica para irrigação conforme os dados do sensor de umidade, garantindo o cuidado com plantas de forma eficiente.  
+- **Controle de Luzes**: O aplicativo permite ligar e desligar luzes remotamente, adicionando conveniência e personalização.  
+- **Central de Controle via Aplicativo**: O usuário pode gerenciar todos os dispositivos conectados através de um único aplicativo móvel.
 
-> *Adicione capturas de tela, GIFs ou vídeos aqui para demonstrar as funcionalidades.*
+> *Demonstrações visuais, como vídeos ou imagens, serão adicionadas em breve.*
 
 ---
 
 ## Acesso ao Projeto
 
-Para acessar o projeto, siga os passos:
-
-1. Clone o repositório:
+### Para clonar e acessar o projeto localmente:
+1. Clone o repositório:  
    ```bash
    git clone https://github.com/usuario/casa-inteligente.git
