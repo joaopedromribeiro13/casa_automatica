@@ -13,7 +13,6 @@ const int sensorMovimento = 16;
 const int sensorUmidade = 34;
 const int bomba = 17;
 const int buzzer = 5;
-char comando = '0';
 
 void setup() {
   Serial.begin(9600);
@@ -58,33 +57,33 @@ void loop() {
 
   //Realiza leitura do Bluetooth
   if (SerialBT.available() > 0) {
-  comando = SerialBT.read();
+  valorRecebido = (int)SerialBT.read();
   
-  if (comando == '1') {
+  if (valorRecebido == 1) {
       //Controle Leds
       digitalWrite(led1, HIGH); // Liga LED1
-    } else if (comando == '0') {
+    } else if (valorRecebido == 0) {
       digitalWrite(led1, LOW);  // Desliga LED1
-    } else if (comando == 'B') {
+    } else if (valorRecebido == 'B') {
       digitalWrite(led2, HIGH); // Liga LED2
-    } else if (comando == 'b') {
+    } else if (valorRecebido == 'b') {
       digitalWrite(led2, LOW);  // Desliga LED2
-    } else if (comando == 'C') {
+    } else if (valorRecebido == 'C') {
       digitalWrite(led3, HIGH); // Liga LED3
-    } else if (comando == 'c') {
+    } else if (valorRecebido == 'c') {
       digitalWrite(led3, LOW);  // Desliga LED3
     }
       //Controle buzzer
-      else if (comando == 'P') {
+      else if (valorRecebido == 'P') {
       digitalWrite(buzzer, HIGH); // Liga o buzzer
-    } else if (comando == 'p') {
+    } else if (valorRecebido == 'p') {
       digitalWrite(buzzer, LOW);  // Desliga o buzzer
     }
 
       // Controle da Bomba
-      else if (comando == 'L') {
+      else if (valorRecebido == 'L') {
       digitalWrite(bomba, HIGH); // Liga a bomba
-    } else if (comando == 'D') {
+    } else if (valorRecebido == 'D') {
       digitalWrite(bomba, LOW);  // Desliga a bomba
     }
 
