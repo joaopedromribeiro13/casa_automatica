@@ -47,8 +47,26 @@ Atualmente, o projeto está **em desenvolvimento**, com as seguintes etapas:
 
 ---
 
-## Acesso ao Projeto
+## :hammer: Funcionalidades do Projeto
 
+- `Monitoramento de Umidade do Solo`:  
+  Sensores captam a umidade do solo e acionam automaticamente o sistema de irrigação quando necessário.  
+
+- `Detecção de Movimento`:  
+  Sensores de presença ativam dispositivos como luzes ou alarmes, automatizando ações e economizando energia.  
+
+- `Irrigação Automatizada`:  
+  Controla a bomba hidráulica com base nos dados dos sensores, garantindo cuidado eficiente com plantas.  
+
+- `Controle de Luzes`:  
+  Permite ligar e desligar luzes remotamente através do aplicativo desenvolvido no App Inventor.  
+
+- `Central de Controle via Aplicativo`:  
+  Aplicativo centraliza o gerenciamento dos sensores e dispositivos, oferecendo praticidade ao usuário.
+
+---
+
+## Acesso ao Projeto.
 ### Para clonar e acessar o projeto localmente:
 1. Clone o repositório:  
    ```bash
