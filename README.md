@@ -71,3 +71,9 @@ Atualmente, o projeto está **em desenvolvimento**, com as seguintes etapas:
 1. Clone o repositório:  
    ```bash
    git clone https://github.com/joaopedromribeiro13/casa_automatica.git
+
+
+
+<h4 align="center">    
+ :construction:  Projeto em construção  :construction:
+</h4>
