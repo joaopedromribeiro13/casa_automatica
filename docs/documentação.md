@@ -1,4 +1,4 @@
-Portas arduino:
+#Portas arduino:
 
 LEDS
 15 - led 1
@@ -6,35 +6,35 @@ LEDS
 04 - led 3
 
 Bomba de água
-16 - bombaPin
-   - sensorUmid
+17 - bomba
+34 - sensorUmidade
 
 Sensor de Presença
-   - sensorPres
+16 - sensorMovimento
 
 Som de bipe   
-   - modBuzzer
+5 - Buzzer
 
 
-Comunicação Entre ESP32 e App inventor:
+#Comunicação Entre ESP32 e App inventor:
 
-LED1 (pino 15):
+- LED1 (pino 15):
 Ligar: 'A'
 Desligar: 'a'
 
-LED2 (pino 2):
+- LED2 (pino 2):
 Ligar: 'B'
 Desligar: 'b'
 
-LED3 (pino 4):
+- LED3 (pino 4):
 Ligar: 'C'
 Desligar: 'c'
 
-Bomba Hidráulica (pino 17):
+- Bomba Hidráulica (pino 17):
 Ligar: 'L'
 Desligar: 'D'
 
-Buzzer (pino 5):
+- Buzzer (pino 5):
 Ligar: 'P'
 Desligar: 'p'
 
