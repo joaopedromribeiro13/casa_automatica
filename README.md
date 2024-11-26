@@ -6,6 +6,11 @@
 
 ---
 
+## Ferramentas e Tecnologias
+
+<img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" width="40" height="40"/>
+<img loading="lazy" src="https://appinventor.mit.edu/explore/sites/explore.appinventor.mit.edu/files/ai-bee-logo.png" width="40" height="40"/>
+
 ## Descrição do Projeto
 
 O projeto **Casa Inteligente** tem como objetivo criar um sistema de automação residencial que combine hardware e software para facilitar a interação com dispositivos domésticos. Ele utiliza sensores para monitoramento ambiental, sistemas automatizados para controle de irrigação e um aplicativo que centraliza todas as funções. Com isso, busca proporcionar aos usuários mais comodidade, eficiência energética e praticidade no dia a dia.
@@ -20,15 +25,13 @@ O projeto **Casa Inteligente** tem como objetivo criar um sistema de automação
 ## Status do Projeto
 
 Atualmente, o projeto está **em desenvolvimento**, com as seguintes etapas:  
-1. **Concluído**:
-   - Protótipo do aplicativo no App Inventor.
-   - Configuração inicial dos sensores e atuadores.  
-2. **Em andamento**:
-   - Integração do aplicativo com o hardware.
+1. - Protótipo do aplicativo no App Inventor.
+   - Configuração inicial dos sensores e atuadores.
+
+2. - Integração do aplicativo com o hardware.
    - Testes de comunicação Bluetooth entre o aplicativo e o microcontrolador ESP32.
-3. **Próximos passos**:
-   - Implementação de novos sensores.
-   - Otimização do código e design do aplicativo.  
+     
+3. - Otimização do código e design do aplicativo.  
    - Documentação final do projeto.
 
 ---
