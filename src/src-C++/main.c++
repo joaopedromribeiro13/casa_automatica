@@ -15,7 +15,7 @@ const int bomba = 17;
 const int buzzer = 5;
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
   SerialBT.begin("Casa automática");
   Serial.println("O dispositivo já pode ser pareado!");
   
@@ -35,6 +35,17 @@ void setup() {
 }
 
 void loop() {
+
+    int sensorState = digitalRead(sensorMovimento);
+    if (sensorState == 1) {
+        (int)SerialBT.println(1);
+    } else {
+        (int)SerialBT.println(0);
+    }
+    delay(500);
+
+
+
 
   /*
 
@@ -64,26 +75,33 @@ void loop() {
       digitalWrite(led1, HIGH); // Liga LED1
     } else if (valorRecebido == 0) {
       digitalWrite(led1, LOW);  // Desliga LED1
-    } else if (valorRecebido == 'B') {
+    } else if (valorRecebido == 2) {
       digitalWrite(led2, HIGH); // Liga LED2
-    } else if (valorRecebido == 'b') {
+    } else if (valorRecebido == 3) {
       digitalWrite(led2, LOW);  // Desliga LED2
-    } else if (valorRecebido == 'C') {
+    } else if (valorRecebido == 4) {
       digitalWrite(led3, HIGH); // Liga LED3
-    } else if (valorRecebido == 'c') {
+    } else if (valorRecebido == 5) {
       digitalWrite(led3, LOW);  // Desliga LED3
     }
       //Controle buzzer
-      else if (valorRecebido == 'P') {
+      else if (valorRecebido == 8) {
       digitalWrite(buzzer, HIGH); // Liga o buzzer
-    } else if (valorRecebido == 'p') {
+    } else if (valorRecebido == 9) {
       digitalWrite(buzzer, LOW);  // Desliga o buzzer
     }
 
       // Controle da Bomba
-      else if (valorRecebido == 'L') {
+      else if (valorRecebido == 6) {
       digitalWrite(bomba, HIGH); // Liga a bomba
-    } else if (valorRecebido == 'D') {
+    } else if (valorRecebido == 7) {
+      digitalWrite(bomba, LOW);  // Desliga a bomba
+    }
+
+      // Controle sensor de presença
+      else if (valorRecebido == 10) {
+      digitalWrite(bomba, HIGH); // Liga a bomba
+    } else if (valorRecebido == 11) {
       digitalWrite(bomba, LOW);  // Desliga a bomba
     }
 
