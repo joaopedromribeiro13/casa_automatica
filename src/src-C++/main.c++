@@ -38,9 +38,9 @@ void loop() {
 
     int sensorState = digitalRead(sensorMovimento);
     if (sensorState == 1) {
-        (int)SerialBT.println(1);
+        SerialBT.println("Detectado");
     } else {
-        (int)SerialBT.println(0);
+        SerialBT.println("Não Detectado");
     }
     delay(500);
 
@@ -107,5 +107,3 @@ void loop() {
 
   }
 }
-
-
