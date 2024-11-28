@@ -16,7 +16,7 @@ const int buzzer = 5;
 
 void setup() {
   Serial.begin(115200);
-  SerialBT.begin("Casa automática");
+  SerialBT.begin("Casa Inteligente");
   Serial.println("O dispositivo já pode ser pareado!");
   
   pinMode(led1, OUTPUT);
@@ -38,9 +38,9 @@ void loop() {
 
     int sensorState = digitalRead(sensorMovimento);
     if (sensorState == 1) {
-        SerialBT.println("Detectado");
+        (int)SerialBT.println("Detectado");
     } else {
-        SerialBT.println("Não Detectado");
+        (int)SerialBT.println("Não Detectado");
     }
     delay(500);
 
