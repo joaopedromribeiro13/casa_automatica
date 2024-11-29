@@ -5,6 +5,7 @@
 BluetoothSerial SerialBT;
 int valorRecebido;
 
+
 // Definir pinos
 const int led1 = 15;
 const int led2 = 2;
@@ -38,9 +39,9 @@ void loop() {
 
     int sensorState = digitalRead(sensorMovimento);
     if (sensorState == 1) {
-        (int)SerialBT.println("Detectado");
+        SerialBT.println("1");
     } else {
-        (int)SerialBT.println("Não Detectado");
+        SerialBT.println("0");
     }
     delay(500);
 
